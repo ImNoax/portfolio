@@ -10,7 +10,7 @@ Greetings and thank you for exploring my portfolio! Here, you will find a compre
 - **Recommendations:** Discover endorsements and recommendations from individuals who have witnessed my dedication and expertise.
 - **About Me:** Learn more about the person behind the projects and experiences.
 
-Feel free to navigate through the sections and don't forget, ## a French version is next!
+Feel free to navigate through the sections and don't forget, a French version is next!
  
 
 # Bienvenue dans Mon Portfolio !
@@ -24,7 +24,7 @@ Bienvenue et merci de découvrir mon portfolio ! Vous y trouverez une présentat
 - **Recommandations :** Découvrez les témoignages et recommandations de personnes ayant constaté ma dévotion et mon expertise.
 - **À Propos de Moi :** Apprenez-en davantage sur la personne derrière les projets et les expériences.
 
-N'hésitez pas à naviguer à travers les différentes sections. ## Merci !
+N'hésitez pas à naviguer à travers les différentes sections. Merci !
 
 
 
