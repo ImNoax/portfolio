@@ -257,9 +257,32 @@ ul.work-images li img:hover {
 }
 .grid {
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	gap: 20px;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 10px;
 	margin-top: 20px;
+}
+
+.grid .grid-itemwork div{
+	background:url(../img/eye.png) 50% 50% no-repeat;
+	background-color: #b8860b;
+	-webkit-transition: all 0.2s linear;
+	-moz-transition: all 0.2s linear;
+	-o-transition: all 0.2s linear;
+	transition: all 0.2s linear;
+}
+.grid .grid-itemwork {
+	background-color: #000000;
+}
+
+.grid .grid-itemwork img:hover {
+	opacity:0.3;
+}
+.grid div p{
+	text-align: center;
+	font-size: large;
+}
+div.container.work{
+	margin-bottom: 5%;
 }
 /***** Resume container *****/
 #resume h3 {
