@@ -234,7 +234,6 @@ ul.work-images li {
 	list-style:none;
 	display:inline-block;
 	margin: 8px 10px;
- background:
 }
 ul.work-images li:first-child {
 	margin-left:0;
@@ -255,6 +254,12 @@ ul.work-images li img {
 }
 ul.work-images li img:hover {
 	opacity:0.1;
+}
+.grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 20px;
+	margin-top: 20px;
 }
 /***** Resume container *****/
 #resume h3 {
