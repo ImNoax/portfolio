@@ -1,10 +1,11 @@
 // Importation d'Express
 const express = require('express');
+const cors = require('cors');
 const app = express();
 const port = process.env.PORT || 3000;  // Utiliser le port fourni par l'environnement (si sur Render) ou 3000 par défaut
 
 // Middleware pour gérer les requêtes JSON
-app.use(express.json());
+app.use(cors());
 
 // Définir une route API pour renvoyer une citation
 app.get('/api/quote', (req, res) => {
