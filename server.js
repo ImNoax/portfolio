@@ -8,13 +8,20 @@ const port = process.env.PORT || 3000;  // Utiliser le port fourni par l'environ
 app.use(cors());
 
 // Définir une route API pour renvoyer une citation
-app.get('/api/quote', (req, res) => {
-  // Exemple de citation
-  const quote = {
-    content: "La vie est ce qui se passe quand tu es occupé à faire d'autres projets.",
-    author: "John Lennon"
-  };
-  res.json(quote);
+app.get('/api/quote', async (req, res) => {
+    try {
+        const response = await axios.get('https://api.quotable.io/random');
+        const quote = response.data;
+    
+        res.json({
+          content: quote.content,
+          author: quote.author
+        });
+
+      } catch (error) {
+        console.error('Erreur lors de l\'appel à l\'API de citation:', error);
+        res.status(500).json({ error: 'Impossible de charger une citation. Veuillez réessayer.' });
+      }
 });
 
 // Démarrer le serveur
