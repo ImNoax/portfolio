@@ -31,9 +31,26 @@ a.brand img {
 #profile .container .span5 {
 	padding:40px 0;
 }
+#quote-container.container button {
+	background-color: #ffffff; 
+	color: #004080; 
+	border: 2px solid #ffffff; 
+	border-radius: 30px;
+	padding: 10px 25px; 
+	font-size: 14px;
+	font-weight: bold;
+	cursor: pointer; 
+	transition: all 0.3s ease-in-out;
+  }
+#quote-container button:hover {
+	background-color: #004080;
+	color: #ffffff;
+	border-color: #004080; 
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /
+}
+
 a.hire-me {
 	display: inline-block;
- *display: inline;
 	padding:20px 60px;
 	background:#39d084;
 	color:#fff;

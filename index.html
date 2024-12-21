@@ -38,7 +38,11 @@
          Déterminé à relever de nouveaux défis et apprendre de nouvelles compétences.</p>
     </div>
 </div>
-
+<div class="container" id="quote-container">
+  <h3>Citation du jour</h3>
+  <p id="quote">Chargement...</p>
+  <button onclick="fetchQuote()">Nouvelle citation</button>
+</div>
 <div class="footer" href="css/bootstrap-responsive.css" rel="stylesheet" type="text/css">
   <div class="container">
     <p class="pull-left"><a href="mailto:noaxnomakapro@gmail.com">noaxnomakapro@gmail.com</a></p>
@@ -49,6 +53,21 @@
 <script src="js/bootstrap.min.js"></script>
 <script>
 $('#myModal').modal('hidden')
+</script>
+<script>
+  async function fetchQuote() {
+    try {
+      const response = await fetch('https://api.quotable.io/random');
+      const data = await response.json();
+      document.getElementById('quote').innerText = `"${data.content}" - ${data.author}`;
+    } catch (error) {
+      document.getElementById('quote').innerText = "Impossible de charger la citation. Veuillez réessayer.";
+      console.error(error);
+    }
+  }
+
+  // Charger une citation au démarrage
+  fetchQuote();
 </script>
 </body>
 </html>
