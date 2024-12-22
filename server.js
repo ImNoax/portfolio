@@ -9,9 +9,9 @@ const axios = require('axios');
 app.use(cors());
 
 // Définir une route API pour renvoyer une citation
-app.get('/api/quote', async (req, res) => {
+app.get('/api/advice', async (req, res) => {
     try {
-        const response = await axios.get('https://api.quotable.io/random');
+        const response = await axios.get('https://api.adviceslip.com/advice');
         const quote = response.data;
     
         res.json({
