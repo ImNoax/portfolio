@@ -3,6 +3,7 @@ const express = require('express');
 const cors = require('cors');
 const app = express();
 const port = process.env.PORT || 3000;  // Utiliser le port fourni par l'environnement (si sur Render) ou 3000 par défaut
+const axios = require('axios');
 
 // Middleware pour gérer les requêtes JSON
 app.use(cors());
