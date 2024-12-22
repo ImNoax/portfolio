@@ -13,7 +13,7 @@ app.get('/api/advice', async (req, res) => {
     try {
         const response = await axios.get('https://api.adviceslip.com/advice');
         const quote = response.data;
-    
+        console.log(quote);
         res.json({
           content: quote.advice,
         });

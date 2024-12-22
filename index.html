@@ -58,6 +58,7 @@ $('#myModal').modal('hidden')
   async function fetchAdvice() {
     try {
       const response = await fetch('https://portfolio-bsll.onrender.com/api/advice');
+      console.log(response);
       const data = await response.json();
       
       document.getElementById('advice').innerText = `"${data.content}"`;
