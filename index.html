@@ -38,10 +38,10 @@
          Déterminé à relever de nouveaux défis et apprendre de nouvelles compétences.</p>
     </div>
 </div>
-<div class="container" id="quote-container">
-  <h3>Citation du jour</h3>
-  <p id="quote">Chargement...</p>
-  <button onclick="fetchQuote()">Nouvelle citation</button>
+<div class="container" id="advice-container">
+  <h3>Conseil du jour</h3>
+  <p id="advice">Chargement...</p>
+  <button onclick="fetchAdvice()">Nouveau conseil</button>
 </div>
 <div class="footer" href="css/bootstrap-responsive.css" rel="stylesheet" type="text/css">
   <div class="container">
@@ -55,18 +55,19 @@
 $('#myModal').modal('hidden')
 </script>
 <script>
-  async function fetchQuote() {
+  async function fetchAdvice() {
     try {
-      const response = await fetch('https://portfolio-bsll.onrender.com/api/quote');
+      const response = await fetch('https://portfolio-bsll.onrender.com/api/advice');
       const data = await response.json();
-      document.getElementById('quote').innerText = `"${data.content}"`;
+      
+      document.getElementById('advice').innerText = `"${data.content}"`;
     } catch (error) {
-      document.getElementById('quote').innerText = "Impossible de charger la citation. Veuillez réessayer.";
+      document.getElementById('advice').innerText = "Impossible de charger un conseil. Veuillez réessayer.";
       console.error(error);
     }
   }
-  // Charger une citation au démarrage
-  fetchQuote();
+
+  fetchAdvice();
 </script>
 </body>
 </html>
