@@ -15,8 +15,7 @@ app.get('/api/advice', async (req, res) => {
         const quote = response.data;
     
         res.json({
-          content: quote.content,
-          author: quote.author
+          content: quote.advice,
         });
 
       } catch (error) {
