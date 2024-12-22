@@ -12,7 +12,7 @@ app.use(cors());
 app.get('/api/advice', async (req, res) => {
     try {
         const response = await axios.get('https://api.adviceslip.com/advice');
-        const quote = response.data;
+        const quote = response.data.slip;
         console.log(quote);
         res.json({
           content: quote.advice,
