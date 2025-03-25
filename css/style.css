@@ -274,11 +274,25 @@ div.developpement{
 	font-size: 20px;
 }
 /***** Resume container *****/
-.resume h3 {
-	margin:60px 0;
+.star-rating i {
+	color: rgba(218, 187, 15, 0.938);
+	font-size: 12px;
+}
+.star-rating .fa-star {
+	color: grey; /* Étoiles vides */
+}
+.star-rating .fa-star.checked {
+	color: rgba(218, 187, 15, 0.938); /* Étoiles pleines */
+}
+.star-rating .fa-star-half-alt {
+	color: rgba(218, 187, 15, 0.938); /* Demi-étoiles */
 }
 .resume .btn-center {
 	text-align:center;
+}
+
+.no-border-table td {
+    border: none;
 }
 .footer {
 	background:#355267;

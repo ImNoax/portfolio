@@ -51,11 +51,11 @@ a.brand img {
 
 a.hire-me {
 	display: inline-block;
-	padding:20px 60px;
+	padding:18px 50px;
 	background:#39d084;
 	color:#fff;
 	text-transform:uppercase;
-	font-size:26px;
+	font-size:18px;
 	margin:20px 0;
 	-webkit-border-radius: 40px;
 	-moz-border-radius: 40px;
@@ -63,7 +63,7 @@ a.hire-me {
 }
 a.hire-me:hover {
 	text-decoration:none;
-	background:#11d170;
+	background:#0fb64a;
 }
 .social {
 	text-align:center;
@@ -302,6 +302,7 @@ div.container.work{
 	margin-bottom: 5%;
 }
 /***** Resume container *****/
+
 #resume h3 {
 	margin:60px 0;
 }

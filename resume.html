@@ -8,6 +8,7 @@
 <link href="css/style.css" rel="stylesheet">
 <link href="font/css/fontello.css" rel="stylesheet">
 <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
 <body>
   <div class="navbar">
@@ -33,49 +34,120 @@
   <div class="container resume">
     <h2>Mon Resume</h2>
     <div>Mon CV est disponible pour téléchargement en PDF</div>
-    <div class="btn-center"> <a href="assets/NOAHNAMOKOCV2025.pdf" class="hire-me"><i class="icon-download"></i> Télécharger Mon CV</a></div>
-    <a href="contact.html"> <i class="icon-mail"></i> CONTACT</a>
+    <div class="btn-center"> <a href="assets/NOAHNAMOKOCV2025.pdf" class="hire-me"> Télécharger Mon CV</a></div>
     <!-- Quadrillage pour le contenu du CV -->
-    <div class="row">
-      <div class="col-md-6">
-        <!-- Informations de contact -->
-        <div class="contact-info">
-          
-          <!-- ... Vos informations de contact ... -->
-        </div>
-
-        <!-- Sommaire -->
-        <div class="summary">
-        
-          <!-- ... Votre sommaire ... -->
-        </div>
-
-        <!-- Études -->
-        <div class="education">
-          <!-- ... Vos études ... -->
-        </div>
-      </div>
-
-      <div class="col-md-6">
-        <!-- Connaissances techniques -->
-        <div class="technical-skills">
-          <!-- ... Vos compétences techniques ... -->
-        </div>
-
-        <!-- Projets -->
-        <div class="projects">
-          <!-- ... Vos projets ... -->
-        </div>
-
-        <!-- Expériences -->
-        <div class="experiences">
-          <!-- ... Vos expériences ... -->
-        </div>
-      </div>
-    </div>
+    <table class="table table-bordered">
+      <!-- Première rangée : À propos de moi sur une seule colonne -->
+      <tr>
+        <td colspan="2">
+          <h3 class="subt">À propos de moi</h3>
+          <ul>
+            <li>Étudiant en 4ème année de Génie Logiciel à Polytechnique Montréal</li>
+            <li>Passionné par le développement Web Full-Stack et la gestion de projet</li>
+            <li>Aisance en travail d'équipe et intégration rapide dans un environnement collaboratif</li>
+            <li>Compétences exceptionnelles en résolution de problèmes et en analyse concise</li>
+            <li>Apprentissage rapide et grande autonomie</li>
+          </ul>
+        </td>
+      </tr>
+    
+      <!-- Deuxième rangée : Formation -->
+      <tr>
+        <td colspan="2">
+          <h3 class="subt">Formation</h3>
+          <p><strong>Baccalauréat en Génie Logiciel</strong> - Polytechnique Montréal (2022-2026)</p>
+          <p><strong>Cours complets :</strong> 
+            <p>- Programmation Orientée Objet Avancé </p>
+            <p>- Structures de données et algorithmes </p>
+            <p>- Visualisation de données</p>
+          </p>
+        </td>
+      </tr>
+    
+      <!-- Troisième rangée : Compétences techniques avec niveaux -->
+      <tr>
+        <td>
+          <h3 class="subt">Langages</h3>
+          <table class="no-border-table">
+            <tr>
+              <td>
+                <ul>
+                  <li><strong>Python</strong> <span class="star-rating" data-rating="4.5"></span></li>
+                  <li><strong>JavaScript</strong> <span class="star-rating" data-rating="4.5"></span></li>
+                  <li><strong>C++</strong> <span class="star-rating" data-rating="3.5"></span></li>
+                  <li><strong>Kotlin</strong> <span class="star-rating" data-rating="2.5"></span></li>
+                </ul>
+              </td>
+              <td>
+                <ul>
+                  <li><strong>TypeScript</strong> <span class="star-rating" data-rating="4.5"></span></li>
+                  </li><li><strong>Java</strong> <span class="star-rating" data-rating="4"></span></li>
+                  <li><strong>C</strong> <span class="star-rating" data-rating="3"></span>
+                  <li><strong>C#</strong> <span class="star-rating" data-rating="2"></span></li>
+                </ul>
+              </td>
+            </tr>
+          </table>
+        </td>
+        <td>
+          <h3 class="subt">Frameworks</h3>
+          <table class="no-border-table">
+            <tr>
+              <td>
+                <ul>
+                  <li><strong>Angular</strong> <span class="star-rating" data-rating="5"></span></li>
+                  <li><strong>Express</strong> <span class="star-rating" data-rating="4"></span></li>
+                  <li><strong>ReactJS</strong> <span class="star-rating" data-rating="3.5"></span></li>
+                  <li><strong>NextJS</strong> <span class="star-rating" data-rating="3.5"></span></li>
+                </ul>
+              </td>
+              <td>
+                <ul>
+                  <li><strong>Electron</strong> <span class="star-rating" data-rating="4"></span></li>
+                  <li><strong>NodeJS</strong> <span class="star-rating" data-rating="4"></span></li>
+                </ul>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <h3 class="subt">Bases de données</h3>
+          <ul>
+            <li><strong>MySQL</strong></li>
+            <li><strong>PostgreSQL</strong></li>
+            <li><strong>MongoDB</strong></li>
+            <li><strong>Redis</strong></li>
+          </ul>          
+        </td>
+        <td>
+          <h3 class="subt">Tech & Méthodologie</h3>
+          <table class="no-border-table">
+            <tr>
+              <td>
+                <ul>
+                  <li><strong>Git</strong> <span class="star-rating" data-rating="5"></span></li>
+                  <li><strong>MS Office</strong> <span class="star-rating" data-rating="5"></span></li>
+                  <li><strong>Figma</strong> <span class="star-rating" data-rating="5"></span></li>
+                  <li><strong>Linux</strong> <span class="star-rating" data-rating="3"></span></li>
+                </ul>
+              </td>
+              <td>
+                <ul>
+                  <li><strong>Agile</strong> <span class="star-rating" data-rating="5"></span></li>
+                  <li><strong>Scrum</strong> <span class="star-rating" data-rating="4"></span></li>
+                  <li><strong>DevOps</strong> <span class="star-rating" data-rating="4"></span></li>
+                  <li><strong>REST</strong> <span class="star-rating" data-rating="4"></span></li>
+                </ul>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
   </div>
-
-
+  &nbsp;
 
 <div class="footer" href="css/bootstrap-responsive.css" rel="stylesheet" type="text/css">
   <div class="container">
@@ -88,5 +160,29 @@
 <script>
 $('#myModal').modal('hidden')
 </script>
+<script>
+  function displayRating() {
+  const ratingElements = document.querySelectorAll('.star-rating');
+  ratingElements.forEach((element) => {
+    const rating = parseFloat(element.getAttribute('data-rating'));
+    let fullStars = Math.floor(rating);
+    let halfStar = (rating - fullStars >= 0.5) ? 1 : 0;
+    let emptyStars = 5 - fullStars - halfStar;
+
+    // Ajout des étoiles pleines, demi-étoiles et étoiles vides
+    element.innerHTML = '';
+    for (let i = 0; i < fullStars; i++) {
+      element.innerHTML += '<i class="fa fa-star checked"></i>';
+    }
+    if (halfStar) {
+      element.innerHTML += '<i class="fa fa-star-half-alt checked"></i>';
+    }
+    for (let i = 0; i < emptyStars; i++) {
+      element.innerHTML += '<i class="fa fa-star"></i>';
+    }
+  });
+}
+
+displayRating();</script>
 </body>
 </html>
