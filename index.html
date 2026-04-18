@@ -6,8 +6,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="css/bootstrap.css" rel="stylesheet">
 <link href="css/style.css" rel="stylesheet">
-<link href="font/css/fontello.css" rel="stylesheet">
-<link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
 <body>
 <div class="navbar">
@@ -18,30 +18,42 @@
       </a>
       <a class="brand" href="index.html"><img src="img/IMG_6192.jpg" alt="My pic"></a>
       <ul class="nav nav-collapse ">
-        <li><a href="index.html" class="active"><i class="icon-user"></i> Mon Profil</a></li>
+        <li><a href="index.html" class="active"><i class="fa-solid fa-user"></i> Profil</a></li>
         <!-- <li><a href="skills.html"><i class="icon-trophy"></i>Compétences</a></li> -->
-        <li><a href="resume.html"><i class="icon-doc-text"></i>Resume</a></li>
-        <li><a href="work.html"><i class="icon-picture"></i>Mes Projets</a></li>
+        <li><a href="resume.html"><i class="fa-solid fa-file-lines"></i> CV</a></li>
+        <li><a href="work.html"><i class="fa-solid fa-diagram-project"></i> Projets</a></li>
+        <li><a href="contact.html"><i class="fa-solid fa-paper-plane"></i> Contact</a></li>
       </ul>
       <div class="nav-collapse collapse"></div>
     </div>
   </div>
 </div>
 <div class="container profile">
-  <div class="span3"> <img src="img/IMG_6192.jpg" alt="My pic"> </div>
-  <div class="span5">
-    <h1>Noah Namoko</h1>
-    <h3>Développeur logiciel</h3>
-    <p> Bienvenue sur mon portfolio ! Étudiant en génie logiciel à l'Université Polytechnique de Montréal,
-       je m'engage dans un voyage passionnant d'apprentissage continu.
-        Mon objectif est de fusionner créativité et excellence technique pour innover dans le domaine de l'ingénierie logicielle.
-         Déterminé à relever de nouveaux défis et apprendre de nouvelles compétences.</p>
+  <div class="profile-card fade-in-up">
+    <div class="profile-photo">
+      <img src="img/IMG_6192.jpg" alt="My pic">
     </div>
+    <div class="profile-content">
+      <h1>Noah Namoko</h1>
+      <h3>Développeur logiciel</h3>
+      <div class="dev-badges">
+        <span><i class="fa-solid fa-code"></i> Full-Stack</span>
+        <span><i class="fa-solid fa-terminal"></i> Backend</span>
+        <span><i class="fa-solid fa-database"></i> Data</span>
+        <span><i class="fa-brands fa-git-alt"></i> Git</span>
+      </div>
+      <a class="contact-cta" href="contact.html"><i class="fa-solid fa-paper-plane"></i> Me contacter</a>
+      <p> Bienvenue sur mon portfolio ! Étudiant en génie logiciel à l'Université Polytechnique de Montréal,
+         je m'engage dans un voyage passionnant d'apprentissage continu.
+          Mon objectif est de fusionner créativité et excellence technique pour innover dans le domaine de l'ingénierie logicielle.
+           Déterminé à relever de nouveaux défis et apprendre de nouvelles compétences.</p>
+    </div>
+  </div>
 </div>
-<div class="container" id="advice-container">
+<div class="container fade-in-up" id="advice-container">
   <h3>Conseil du jour</h3>
   <p id="advice">Chargement...</p>
-  <button onclick="fetchAdvice()">Nouveau conseil</button>
+  <button onclick="fetchAdvice()"><i class="fa-solid fa-rotate"></i> Nouveau conseil</button>
   <p class="note">
     <small>
       Remarque : Ce conseil est récupéré depuis une API publique en anglais, il ne provient pas d'une base de données locale.
@@ -49,10 +61,10 @@
   </p>
 </div>
 
-<div class="footer" href="css/bootstrap-responsive.css" rel="stylesheet" type="text/css">
+<div class="footer">
   <div class="container">
-    <p class="pull-left"><a href="mailto:noaxnomakapro@gmail.com">noaxnomakapro@gmail.com</a></p>
-    <p class="pull-right"><a href="contact.html"> <i class="icon-mail"></i> CONTACT</a></p>
+    <p class="pull-left footer-secondary"><a href="mailto:noaxnomakapro@gmail.com"><i class="fa-solid fa-envelope"></i> noaxnomakapro@gmail.com</a></p>
+    <p class="pull-right footer-primary"><a href="contact.html"><i class="fa-solid fa-paper-plane"></i> Contact</a></p>
   </div>
 </div>
 <script src="js/jquery-1.10.1.min.js"></script>

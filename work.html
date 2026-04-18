@@ -6,10 +6,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="css/bootstrap.css" rel="stylesheet">
 <link href="css/style.css" rel="stylesheet">
-<link href="font/css/fontello.css" rel="stylesheet">
 <link href="css/style-single-page.css" rel="stylesheet">
-<link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css" media="screen">
+<link href='https://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
@@ -21,89 +19,77 @@
         </a>
         <a class="brand" href="index.html"><img src="img/IMG_6192.jpg" alt="My pic"></a>
         <ul class="nav nav-collapse ">
-          <li><a href="index.html"><i class="icon-user"></i> Mon Profil</a></li>
+          <li><a href="index.html"><i class="fa-solid fa-user"></i> Profil</a></li>
           <!-- <li><a href="skills.html"><i class="icon-trophy"></i>Compétences</a></li> -->
-          <li><a href="resume.html"><i class="icon-doc-text"></i>Resume</a></li>
-          <li><a href="work.html"><i class="icon-picture"></i>Mes Projets</a></li>
+          <li><a href="resume.html"><i class="fa-solid fa-file-lines"></i> CV</a></li>
+          <li><a href="work.html" class="active"><i class="fa-solid fa-diagram-project"></i> Projets</a></li>
+          <li><a href="contact.html"><i class="fa-solid fa-paper-plane"></i> Contact</a></li>
         </ul>
         <div class="nav-collapse collapse"></div>
       </div>
     </div>
   </div>
-<div class="container work">
+<div class="container work fade-in-up">
   <h2>Mes projets</h2>
-  <!-- <ul class="work-images">
-    <li>
-      <div><a class="fancybox-thumb" rel="fancybox-thumb" href="img/indexkahoot.PNG" title="Spotify Replica"><img src="img/Captureindex.PNG" alt=""></a></div>
-    </li>
-    <li>
-      <div><a class="fancybox-thumb" rel="fancybox-thumb" href="img/black.PNG"><img src="img/black.PNG" alt=""></a></div>
-    </li>
-    <li>
-      <div><a class="fancybox-thumb" rel="fancybox-thumb" href="img/black.PNG"><img src="img/black.PNG" alt=""></a></div>
-    </li>
-  </ul> -->
+  <a class="contact-cta work-contact-cta" href="contact.html"><i class="fa-solid fa-paper-plane"></i> Discuter de ces projets</a>
   <div class="grid">
-    <div class="grid-itemwork project2">
+    <div class="grid-itemwork project2 project-card" tabindex="0" role="button" aria-label="Ouvrir les détails du projet Late Night at Trivia-Theater" data-title="Late Night at Trivia-Theater" data-image="img/indexkahoot.PNG" data-long-description="Application de quiz web réalisée en équipe avec une logique de parties interactives, gestion des questions/réponses et expérience utilisateur orientée jeu en temps réel. Le projet m'a permis de renforcer mes compétences en architecture web, gestion d'état front-end et intégration progressive des fonctionnalités de jeu." data-technologies="Angular, TypeScript, HTML, CSS, Node.js, Express, MongoDB, Redis, JSON Web Token, WebSocket">
       <div>
-        <a class="fancybox-thumb" rel="fancybox-thumb" href="img/indexkahoot.PNG" title="Own Trivia Quiz Web App">
         <img src="img/indexkahoot.PNG" alt="Main Page Quiz App">
-      </a>
       </div>
-        <p>Late Night at Trivia-Theater</p>
-        <p>Own Quiz Web App <a href="https://github.com/ImNoax/KahootStyleGame" target="_blank" rel="noopener noreferrer">
+        <p><i class="fa-solid fa-code"></i> Late Night at Trivia-Theater</p>
+        <p class="project-description">Application de quiz web interactive avec logique de parties et expérience orientée joueur.</p>
+        <p>Own Quiz Web App <a href="https://github.com/ImNoax/KahootStyleGame" target="_blank" rel="noopener noreferrer" aria-label="Depot GitHub Kahoot Style Game">
           <i class="fab fa-github"></i>
         </a></p>
     </div>
-    <div class="grid-itemwork project1">
+    <div class="grid-itemwork project1 project-card" tabindex="0" role="button" aria-label="Ouvrir les détails du projet Spotify Clone" data-title="Spotify Clone" data-image="img/indexspotifyreplica.PNG" data-long-description="Clone d'interface Spotify axé sur le front-end, avec une navigation fluide, une structure de page modulaire et une mise en page responsive. Le projet a servi à pratiquer la qualité UI, la cohérence visuelle et l'organisation du code client." data-technologies="React, Express, HTML, CSS, Base de données locale">
       <div>
-        <a class="fancybox-thumb" rel="fancybox-thumb" href="img/indexspotifyreplica.PNG" title="Spotify Replica">
         <img src="img/indexspotifyreplica.PNG" alt="Spotify Clone Pic">
-        </a>
       </div>
-        <p>Spotify Clone </p>
+        <p><i class="fa-solid fa-music"></i> Spotify Clone </p>
+        <p class="project-description">Reproduction front-end d'une interface musicale moderne avec navigation et mise en page responsive.</p>
         <p>
-          <a href="https://github.com/ImNoax/SpotifyReplica2440" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/ImNoax/SpotifyReplica2440" target="_blank" rel="noopener noreferrer" aria-label="Depot GitHub Spotify Replica">
             <i class="fab fa-github"></i>
           </a>
         </p>
     </div>
-    <div class="grid-itemwork project3">
+    <div class="grid-itemwork project3 project-card" tabindex="0" role="button" aria-label="Ouvrir les détails du projet Système embarqué" data-title="Système embarqué" data-image="img/systeme_embarq.jpg" data-long-description="Projet académique en systèmes embarqués focalisé sur l'intégration matériel/logiciel, la fiabilité d'exécution et l'optimisation des ressources. Ce travail m'a permis de consolider les bases d'architecture bas niveau et de validation fonctionnelle." data-technologies="C++, ARM">
       <div>
-        <a class="fancybox-thumb" rel="fancybox-thumb" href="img/systeme_embarq.jpg" title="Système Embarqué Automne 2022">
         <img src="img/systeme_embarq.jpg" alt="Systeme 1900 pic">
-      </a>
       </div>
-        <p>Système embarqué <a href="" target="_blank" rel="noopener noreferrer">
+        <p><i class="fa-solid fa-microchip"></i> Système embarqué <a href="" target="_blank" rel="noopener noreferrer" aria-label="Depot GitHub Systeme embarque">
           <i class="fab fa-github"></i>
         </a></p>
+        <p class="project-description">Projet académique en systèmes embarqués axé sur l'intégration matériel/logiciel.</p>
         <p> Aucun dépôt disponible</p>
     </div>
-    <div class="grid-itemwork project1">
+    <div class="grid-itemwork project1 project-card" tabindex="0" role="button" aria-label="Ouvrir les détails du projet Agent IA pour le jeu Hex" data-title="Agent IA pour le jeu Hex" data-image="img/black.PNG" data-long-description="Projet de cours en Intelligence Artificielle à Polytechnique Montréal (2025). Conception d'un agent intelligent en Python pour le jeu Hex avec contraintes strictes de temps d'exécution et mémoire (RAM/cache). Implémentation d'un algorithme Minimax avec pruning Alpha-Beta, tri heuristique et table de transposition avec hachage pour réduire l'espace de recherche. Développement itératif et mesure des performances (taux de victoire, rapidité de décision, gestion du temps restant)." data-technologies="Python, Ptinker">
       <div>
-        <a class="fancybox-thumb" rel="fancybox-thumb" href="img/black.PNG" title="Empty Project">
         <img src="img/black.PNG" alt="Empty Black Pic">
-        </a>
       </div>
-        <p>Web Portfolio</p>
-        <p><a href="https://github.com/ImNoax/portfolio" target="_blank" rel="noopener noreferrer">
+        <p><i class="fa-solid fa-brain"></i> Agent IA pour le jeu Hex</p>
+        <p class="project-description">Projet IA 2025: agent Hex en Python avec Minimax/Alpha-Beta.</p>
+        <p>Aucun dépôt disponible</p>
+    </div>
+    <div class="grid-itemwork project1 project-card" tabindex="0" role="button" aria-label="Ouvrir les détails du projet Web Portfolio" data-title="Web Portfolio" data-image="img/black.PNG" data-long-description="Portfolio personnel développé pour centraliser mes projets, compétences et expériences. Le site a évolué avec plusieurs passes UI/UX, une meilleure cohérence visuelle et des composants interactifs orientés présentation professionnelle d'un profil développeur logiciel." data-technologies="HTML, CSS, JavaScript, Bootstrap, jQuery, Node.js, Express, Font Awesome">
+      <div>
+        <img src="img/black.PNG" alt="Web Portfolio Pic">
+      </div>
+        <p><i class="fa-solid fa-laptop-code"></i> Web Portfolio</p>
+        <p class="project-description">Site portfolio personnel conçu pour présenter projets, compétences et parcours.</p>
+        <p><a href="https://github.com/ImNoax/portfolio" target="_blank" rel="noopener noreferrer" aria-label="Depot GitHub portfolio">
           <i class="fab fa-github"></i>
         </a></p>
     </div>
-    <!-- <div class="developpement">
-       <p>Développement en cours...</p>
-       <p>Ajout d'un lien vers chaque dépôt Git du projet</p>
-       <p>Développement en cours...</p>
-    </div> -->
-    
-    
   </div>
 </div>
 
-<div class="footer" href="css/bootstrap-responsive.css" rel="stylesheet" type="text/css">
+<div class="footer">
   <div class="container">
-    <p class="pull-left"><a href="mailto:noaxnomakapro@gmail.com">noaxnomakapro@gmail.com</a></p>
-    <p class="pull-right"><a href="contact.html"> <i class="icon-mail"></i> CONTACT</a></p>
+    <p class="pull-left footer-secondary"><a href="mailto:noaxnomakapro@gmail.com"><i class="fa-solid fa-envelope"></i> noaxnomakapro@gmail.com</a></p>
+    <p class="pull-right footer-primary"><a href="contact.html"><i class="fa-solid fa-paper-plane"></i> Contact</a></p>
   </div>
 </div>
 <script src="js/jquery-1.10.1.min.js"></script>
@@ -111,22 +97,57 @@
 <script>
 $('#myModal').modal('hidden')
 </script>
-<script src="js/jquery.fancybox.js?v=2.1.5"></script>
 <script>
-$(document).ready(function () {
-    $(".fancybox-thumb").fancybox({
-        helpers: {
-            title: {
-                type: 'inside'
-            },
-            overlay: {
-                css: {
-                    'background': 'rgba(1,1,1,0.65)'
-                }
-            }
-        }
+  $(document).ready(function () {
+    function openProjectModal(event, card) {
+      if ($(event.target).closest('a').length) {
+        return;
+      }
+
+      const title = $(card).data('title');
+      const image = $(card).data('image');
+      const longDescription = $(card).data('long-description');
+      const technologies = String($(card).data('technologies') || '')
+        .split(',')
+        .map((item) => item.trim())
+        .filter(Boolean);
+
+      $('#projectModalTitle').text(title);
+      $('#projectModalImage').attr('src', image);
+      $('#projectModalImage').attr('alt', title);
+      $('#projectModalDescription').text(longDescription);
+      $('#projectModalTechnologies').empty();
+      technologies.forEach((tech) => {
+        $('#projectModalTechnologies').append('<span class="tech-badge">' + tech + '</span>');
+      });
+
+      $('#projectModal').modal('show');
+    }
+
+    $('.project-card').on('click', function (event) {
+      openProjectModal(event, this);
     });
-});
+
+    $('.project-card').on('keydown', function (event) {
+      if (event.key === 'Enter' || event.key === ' ') {
+        event.preventDefault();
+        openProjectModal(event, this);
+      }
+    });
+  });
 </script>
+
+<div id="projectModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="projectModalTitle" aria-hidden="true">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+    <h3 id="projectModalTitle">Projet</h3>
+  </div>
+  <div class="modal-body">
+    <img id="projectModalImage" src="img/black.PNG" alt="Project preview">
+    <p id="projectModalDescription"></p>
+    <h4 class="project-tech-title">Technologies utilisées</h4>
+    <div id="projectModalTechnologies" class="project-tech-list"></div>
+  </div>
+</div>
 </body>
 </html>

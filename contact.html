@@ -6,8 +6,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="css/bootstrap.css" rel="stylesheet">
 <link href="css/style.css" rel="stylesheet">
-<link href="font/css/fontello.css" rel="stylesheet">
-<link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
 <body>
 <div class="navbar">
@@ -16,53 +16,53 @@
       <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> 
       <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> 
       </a>
-      
+      <a class="brand" href="index.html"><img src="img/IMG_6192.jpg" alt="My pic"></a>
       <ul class="nav nav-collapse ">
-        <li><a href="index.html"><i class="icon-user"></i> Mon Profil</a></li>
+        <li><a href="index.html"><i class="fa-solid fa-user"></i> Profil</a></li>
         <!-- <li><a href="skills.html"><i class="icon-trophy"></i>Compétences</a></li> -->
-        <li><a href="resume.html"><i class="icon-doc-text"></i>Resume</a></li>
-        <li><a href="work.html"><i class="icon-picture"></i>Mes Projets</a></li>
+        <li><a href="resume.html"><i class="fa-solid fa-file-lines"></i> CV</a></li>
+        <li><a href="work.html"><i class="fa-solid fa-diagram-project"></i> Projets</a></li>
+        <li><a href="contact.html" class="active"><i class="fa-solid fa-paper-plane"></i> Contact</a></li>
       </ul>
       <div class="nav-collapse collapse"></div>
     </div>
   </div>
 </div>
 <div class="container contact">
-  <div class="span3"> <img src="img/debout.JPG" alt="My pic"> </div>
-  <div class="span5">
-    <h2>Pour me contacter : </h2>
-    <section id="contact">
-        <h2>Contactez-moi</h2>
-        <ul>
-          <!-- LinkedIn -->
-          <li>
-            <strong>LinkedIn:</strong>
-            <a href="http://linkedin.com/in/noah-namoko-b273a7255">Noah Namoko</a>
-          </li>
-    
-          <!-- Numéro de téléphone -->
-          <li>
-            <strong>Téléphone:</strong>
-            <span>+1 438-389-5799</span>
-          </li>
-    
-          <!-- Gmail -->
-          <li>
-            <strong>Email:</strong>
-            <a href="mailto:votre.email@gmail.com">noaxnomakapro@gmail.com</a>
-          </li>
-        </ul>
-        <p>Je suis actuellement ouvert à de nouvelles opportunités et je serais ravi d'échanger davantage avec vous.</p>
-        <p> N'hésitez pas à me contacter via LinkedIn, par téléphone ou par email. J'attends avec impatience de discuter de la possibilité de collaborer avec vous.</p>
-        <p> Merci!</p>
-      </section>
+  <div class="contact-card fade-in-up">
+    <div class="contact-photo">
+      <img src="img/debout.JPG" alt="My pic">
+    </div>
+    <div class="contact-content">
+      <h2>Pour me contacter :</h2>
+      <section id="contact">
+          <h2>Contactez-moi</h2>
+          <ul>
+            <li>
+            <strong><i class="fa-brands fa-linkedin"></i> LinkedIn:</strong>
+              <a href="http://linkedin.com/in/noah-namoko-b273a7255">Noah Namoko</a>
+            </li>
+            <li>
+            <strong><i class="fa-solid fa-phone"></i> Téléphone:</strong>
+              <span>+1 438-389-5799</span>
+            </li>
+            <li>
+            <strong><i class="fa-solid fa-envelope"></i> Email:</strong>
+              <a href="mailto:noaxnomakapro@gmail.com">noaxnomakapro@gmail.com</a>
+            </li>
+          </ul>
+          <p>Je suis actuellement ouvert à de nouvelles opportunités et je serais ravi d'échanger davantage avec vous.</p>
+          <p>N'hésitez pas à me contacter via LinkedIn, par téléphone ou par email. J'attends avec impatience de discuter de la possibilité de collaborer avec vous.</p>
+          <p>Merci!</p>
+        </section>
+    </div>
     </div>
 </div>
 
-<div class="footer" href="css/bootstrap-responsive.css" rel="stylesheet" type="text/css">
+<div class="footer">
   <div class="container">
-    <p class="pull-left"><a href="mailto:noaxnomakapro@gmail.com">noaxnomakapro@gmail.com</a></p>
-    <p class="pull-right"><a href="contact.html"> <i class="icon-mail"></i> CONTACT</a></p>
+    <p class="pull-left footer-secondary"><a href="mailto:noaxnomakapro@gmail.com"><i class="fa-solid fa-envelope"></i> noaxnomakapro@gmail.com</a></p>
+    <p class="pull-right footer-primary"><a href="contact.html"><i class="fa-solid fa-paper-plane"></i> Contact</a></p>
   </div>
 </div>
 <script src="js/jquery-1.10.1.min.js"></script>
